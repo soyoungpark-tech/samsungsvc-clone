@@ -56,7 +56,6 @@
 }
 .main-visual-txt {
   position: absolute;
-  width: 100%;
   top: 50%;
   left: 20%;
   transform: translate(-50%, -50%);
@@ -342,8 +341,10 @@
 }
 
 /* main-notice */
-.main-notice .tit__02 {
+.main-notice h2 {
   text-align: center;
+  display: inline-block;
+  border: 1px solid #000;
 }
 .main-notice ul {
   border: 1px solid #ddd;
@@ -375,10 +376,8 @@
 .app-footer .footer-pages {
   padding: 13px 24px 15px 24px;
   width: 100%;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
 }
-.app-footer .footer-pages > a {
+.app-footer .footer-pages a {
   display: inline-block;
   margin: 7px 24px 0 0;
   font-size: var(--font-small);
@@ -418,8 +417,8 @@
 /* footer-link */
 .footer-sub-site {
   margin: 0;
-  padding: 0 24px;
-  position: relative;
+  padding: 24px;
+  padding-left: 0;
 }
 .footer-sub-site .footer-link p {
   display: inline-block;
